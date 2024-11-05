@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Mercado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sistema de Cadastro de Mercado</h1>
+
+    <!-- Formulário de Cadastro de Clientes -->
+    <h2>Cadastro de Clientes</h2>
+    <form id="formClientes">
+        <label for="nomeCliente">Nome:</label>
+        <input type="text" id="nomeCliente" required>
+        <label for="emailCliente">Email:</label>
+        <input type="email" id="emailCliente" required>
+        <button type="submit">Cadastrar Cliente</button>
+    </form>
+    <div id="clientesCadastrados"></div>
+
+    <!-- Formulário de Cadastro de Produtos -->
+    <h2>Cadastro de Produtos</h2>
+    <form id="formProdutos">
+        <label for="nomeProduto">Nome:</label>
+        <input type="text" id="nomeProduto" required>
+        <label for="precoProduto">Preço:</label>
+        <input type="number" id="precoProduto" required>
+        <button type="submit">Cadastrar Produto</button>
+    </form>
+    <div id="produtosCadastrados"></div>
+
+    <!-- Formulário de Saída de Venda -->
+    <h2>Saída de Venda</h2>
+    <form id="formVendas">
+        <label for="produtoVendido">Produto:</label>
+        <input type="text" id="produtoVendido" required>
+        <label for="quantidadeVendida">Quantidade:</label>
+        <input type="number" id="quantidadeVendida" required>
+        <button type="submit">Registrar Venda</button>
+    </form>
+    <div id="vendasRegistradas"></div>
+
+    <script src="script.js" refer></script>
+</body>
+</html>
